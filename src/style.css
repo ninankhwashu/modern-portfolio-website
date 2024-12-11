@@ -107,17 +107,22 @@ nav {
 
 #projects {
   padding: 64px 32px;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 32px;
 }
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
 .project-card {
   background: #fff;
-  padding: 24px;
+  padding: 16px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -129,6 +134,13 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.project-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
 .project-card h3 {
   margin-bottom: 8px;
   color: #ff5722;
@@ -137,6 +149,22 @@ nav {
 .project-card p {
   font-size: 14px;
   color: #555;
+  margin-bottom: 16px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #e64a19;
 }
 
 #timeline {
